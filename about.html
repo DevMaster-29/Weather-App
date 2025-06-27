@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="index.css" />
+  </head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+           <img src="logo1.png" alt="Logo" style="height: 40px;"/> 
+          </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About this App</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              id="city"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit" id="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+   <section id="about">
+  <h2>About This Weather App</h2>
+
+  <p>
+    This weather application is designed to provide real-time weather updates for cities around the world. It fetches live data using the <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a> and displays key weather metrics in a user-friendly layout.
+  </p>
+
+  <p><strong>Key Features:</strong></p>
+  <ul>
+    <li>🌍 Search weather by city name</li>
+    <li>🌡️ View temperature in Celsius and Fahrenheit</li>
+    <li>💧 Humidity, wind speed, and gust information</li>
+    <li>🔥 Heat Index, Wind Chill, Dew Point</li>
+    <li>📍 Common cities weather displayed by default</li>
+    <li>☀️ Pressure, UV Index, and Weather Condition</li>
+  </ul>
+
+  <p><strong>Technologies Used:</strong></p>
+  <ul>
+    <li>📜 HTML5 & CSS3 for structure and styling</li>
+    <li>⚙️ JavaScript for dynamic data fetching</li>
+    <li>📡 WeatherAPI for real-time weather data</li>
+    <li>🎨 Responsive layout with custom CSS</li>
+  </ul>
+
+  <p>
+    
+    This project was built as a learning experience to enhance JavaScript and API integration skills.
+  </p>
+
+  <p class="disclaimer">
+    ⚠️ <em>Disclaimer:</em> The data displayed depends entirely on the WeatherAPI service.
+  </p>
+</section>
+
+<footer id="footer">
+          <p>🌐 Powered by <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a> | 🌦️ Weather App © 2025</p>
+           <p>💻 Built by <strong>Himanshu Mishra</strong></p>
+          <p class="disclaimer">This app is for learning and demonstration purposes only.</p>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+           <img src="logo1.png" alt="Logo" style="height: 40px;"/> 
+          </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About this App</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              id="city"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit" id="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="my-4 text-center">Weather For <span id="cityName"></span></h1>
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Location & Time</h4>
+              </div>
+              <div class="card-body">
+                
+                <h1 class="card-title pricing-card-title"><span id="location2"></span>
+                  <small class="text-body-secondary fw-light"></small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Location :<span id="location"></span></li>
+                  <li>Local Time:<span id="localtime"></span></li>
+                  <li>Latitude:<span id="latitude"></span></li>
+                  <li>Longitude:<span id="longitude"></span></li>
+                  <li>Time Zone ID:<span id="tz_id"></span></li>
+                  <li>Last Updated:<span id="last_updated"></span></li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Current Weather</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title"><span id="temp2"></span></span>
+                  <small class="text-body-secondary fw-light">°C</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Temprature :<span id="temp"></span></li>
+                  <li>Condition:<span id="condition"></span></li>
+                  <li>Humidity :<span id="humidity"></span></li>
+                  <li>Precipitation :<span id="precip"></span></li>
+                  <li>Wind Speed:<span id="wind_speed"></span></li>
+                  <li>Pressure:<span id="pressure"></span></li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Feels Like</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title"><span id="feelslike2"></span>
+                  <small class="text-body-secondary fw-light">°C</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Feels Like:<span id="feelslike"></span></li>
+                  <li>Heat Index:<span id="heatindex"></span></li>
+                  <li>Wind Chill:<span id="windchill"></span></li>
+                  <li>Gust:<span id="gust"></span></li>
+                  <li>Visibility:<span id="visibility"></span></li>
+                  <li>Dew Point:<span id="dewpoint"></span></li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h2 class="display-6 text-center mb-4"><b>Weather of Other Common places</b></h2>
+        
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%">Location</th>
+                
+                <th style="width: 22%">Temprature</th>
+                <th style="width: 22%">Condition</th>
+                <th style="width: 22%">Precipitation</th>
+                <th style="width: 22%">Humidity</th>
+                <th style="width: 22%">Feels_like</th>
+                <th style="width: 22%">HeatIndex</th>
+                
+              </tr> 
+            </thead>
+            <tbody>
+              <tr>
+                <tr id="Shanghai"><td>Shanghai</td></tr>
+                 <tr id="Boston"><td>Boston</td></tr>
+                  <tr id="Lucknow"><td>Lucknow</td></tr>
+                   <tr id="Kolkata"><td>Kolkata</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <footer id="footer">
+          <p>🌐 Powered by <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a> | 🌦️ Weather App © 2025</p>
+           <p>💻 Built by <strong>Himanshu Mishra</strong></p>
+          <p class="disclaimer">This app is for learning and demonstration purposes only.</p>
+     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
