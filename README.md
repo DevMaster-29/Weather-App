@@ -24,9 +24,8 @@ To run the project locally:
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
 open index.html
----
+ ``` 
 
-Author
+## Author
 Name:Himanshu Mishra
-
 GitHub: @DevMaster-29
